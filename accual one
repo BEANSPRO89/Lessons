@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        boolean fire_code_sesh = true;
+    boolean unfire_code_sesh = false;
+        System.out.println("this is fire " + fire_code_sesh);
+        System.out.println("this isnt fire " + unfire_code_sesh);
+        boolean Iscreative = false;
+        System.out.println(Iscreative);
+        int points = 50;
+        int pointstopass = 50;
+        boolean passed = points >= pointstopass;
+        System.out.println("has passed " + passed);
+        int health = 1;
+        boolean alive = health > 0;
+        System.out.println("is alive " + alive);
+        boolean passedtest1 = true;
+        boolean passedtest2 = true;
+                boolean degree = passedtest2 & passedtest1;
+                System.out.println("did you pass " + degree);
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("whats your age?");
+                int age = scanner.nextInt();
+                System.out.println("true or false, are you canadian?");
+                boolean iscan = scanner.nextBoolean();
+                int canage = 18;
+                int usage = 21;
+                boolean candrink = iscan && age >= canage || !iscan && age >= usage;
+                System.out.println("can u drink? " + candrink);
+    }
+}
