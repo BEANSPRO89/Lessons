@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int mana = 100;
+        System.out.println("Mana: " + mana);
+        mana += 20; // mana = mana + 20;
+        System.out.println("Mana: " + mana);
+        mana -= 60;
+        System.out.println("mana: " + mana);
+        mana *= 2;
+        System.out.println("Mana: " + mana);
+        mana /= 2;
+        System.out.println("Mana: " + mana);
+        mana %= 2;
+        System.out.println("Mana: " + mana); //finding out if even or odd (0 is even)
+    }
+}
