@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Input The First Number");
+        int first = scanner.nextInt();
+
+        System.out.println("Input The Second Number");
+        int second = scanner.nextInt();
+
+        System.out.println("Addition?");
+        boolean add = scanner.nextBoolean();
+
+        if (add) {
+            int sum = first + second;
+            System.out.println("Answer: " + sum);
+        } else {
+            System.out.println("Subtraction?");
+            boolean sub = scanner.nextBoolean();
+            if (sub) {
+                int subt = first - second;
+                System.out.println("Answer: " + subt);
+            } else {
+                System.out.println("Multiplication?");
+                boolean mult = scanner.nextBoolean();
+                if (mult) {
+                    int product = first * second;
+                    System.out.println("Answer: " + product);
+                } else {
+                    System.out.println("Division?");
+                    boolean div = scanner.nextBoolean();
+                    if (div) {
+int divi = first / second;
+System.out.println("Answer: " + divi);
+                    }
+                }
+            }
+        }
+        boolean contin = true;
+        scanner.nextBoolean();
+        if (contin) {
+
+        }
+        scanner.close();
+    }}
